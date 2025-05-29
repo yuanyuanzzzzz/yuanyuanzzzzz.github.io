@@ -86,7 +86,7 @@ skills:
       - name: Hiking
         description: ''
         icon: person-simple-walk
-      - name: Cats
+      - name: Badminton
         description: ''
         icon: cat
       - name: Photography
