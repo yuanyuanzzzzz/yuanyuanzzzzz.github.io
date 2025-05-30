@@ -28,25 +28,6 @@ body {
     color: #686a6c;
 }
 
-.cv-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #6c757d;
-    color: white;
-    font-weight: bold;
-    font-size: 0.9em;
-    border-radius: 6px;
-    text-decoration: none;
-    margin: 0 10px;
-    text-transform: uppercase;
-}
-.cv-icon:hover {
-    background-color: #5a6268;
-}
-
 .intro {
     max-width: 600px;
     margin: 0 auto;
@@ -55,9 +36,10 @@ body {
     color: #444;
 }
 .banner {
-    background: url('../assets/banner.jpg') center/cover;
-    height: 250px;
+    background: url('../assets/banner6.jpg') center/cover;
+    height: 300px;
 }
+
 
 .profile-pic {
     width: 150px;
@@ -80,7 +62,7 @@ body {
 }
 
 .aboutme {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     font-family: 'Raleway';
     margin-bottom: 2px; /* reduce space under About Me */
@@ -122,4 +104,39 @@ body {
 
 blockquote {
     margin: 0;
+}
+
+/* education Section */
+.education {
+    max-width: 1200px;
+    margin: 102px auto;
+    font-family: 'Raleway';
+    text-align: left;
+}
+.education h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Raleway';
+    margin-bottom: 2px;
+}
+.education-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.education-item {
+    flex: 1 1 200px;
+    max-width: 370px;
+}
+
+.education-item .degree {
+    font-size: 1.2em;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+.education-item p {
+    font-size: 0.95em;
+    margin: 3px 0;
+    color: #444;
 }
