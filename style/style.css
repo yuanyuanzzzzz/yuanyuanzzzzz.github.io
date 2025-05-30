@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif, Helvetica, 'Raleway';
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+.name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    color: #666;
+    margin: 5px 0px;
+}
+.icon-link i {
+    font-size: 1.5em;
+    margin: 10px 10px;
+    color: #676a6c;
+}
+
+.icon-link i:hover {
+    color: #686a6c;
+}
+
+.cv-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #6c757d;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+.cv-icon:hover {
+    background-color: #5a6268;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #444;
+}
+.banner {
+    background: url('../assets/banner.jpg') center/cover;
+    height: 250px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 4px solid white;
+}
+
+.intro-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto; /* reduced vertical margin */
+    align-items: center;
+    gap: 40px;
+}
+
+.intro-text h2 {
+    margin-bottom: 10px; /* tighten space below heading */
+}
+
+.aboutme {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Raleway';
+    margin-bottom: 2px; /* reduce space under About Me */
+}
+
+.intro-text p {
+    margin-top: 5px; /* reduce space above the paragraph */
+    font-family: 'Raleway';
+}
+
+.intro-text {
+    flex: 2.5;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #444;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
+
+.intro-text a.clean-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro-text a.clean-link:hover {
+    text-decoration: underline;
+}
+
+.quote {
+    flex: 1.5;
+    padding-left: 10px;
+    margin-left: 0px;
+    border-left: 2px solid #ccc;
+    font-family: Times;
+    font-style: italic;
+    color: #6c757d;
+}
+
+blockquote {
+    margin: 0;
+}
