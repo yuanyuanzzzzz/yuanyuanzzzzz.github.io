@@ -5,6 +5,7 @@ body {
     margin: 0;
 }
 
+
 a {
     color: #2477c9;
     text-decoration: underline;
@@ -324,3 +325,167 @@ blockquote {
     font-size: 1em;
     color: #333;
 }
+
+/*For the mobile adjustments*/
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+        /* background: pink; for testing */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .banner {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .aboutme {
+        display: none;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .quote {
+        order: -1; /* move quote to top */
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+        margin-top: -45px;
+        margin-bottom: 15px;
+    }
+
+    .intro-text {
+        text-align: left;
+        padding-left: 10px; /* small indent for About Me */
+    }
+
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+        margin-top: -100px;
+    }
+
+    .icons a {
+        margin: 0 8px;
+    }
+
+    .education-grid,
+    .research-list,
+    .publications-list,
+    .talks-list,
+    .hobbies-list {
+        flex-direction: column;
+    }
+
+    /* Optional: section padding */
+    .research, .education, .publications, .talks, .hobbies {
+        padding: 0 20px;
+    }
+}
+
+/* Publications Section on mobile*/
+@media (max-width: 768px) {
+    .publication-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .publication-card img {
+      width: 90%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+  
+    .publication-details h3 {
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+  
+    .publication-details p.author {
+      font-size: 0.6em;
+      margin-bottom: 5px;
+    }
+  
+    .publication-details em {
+      display: block;
+      font-size: 0.8em;
+      margin-bottom: 10px;
+    }
+  
+    .pub-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.8em;
+      gap: 5px;
+    }
+  
+    .pub-tag {
+      font-size: 0.9em;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background-color: #eee;
+      color: #333;
+      text-decoration: none;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .education-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+    }
+  
+
+    .education-item {
+        display: block;
+        flex: none !important;         /* override flex sizing */
+        max-width: 100% !important;    /* let it be natural width */
+        padding: 8px 0 !important;
+        margin: 0 !important;
+        border-bottom: 1px solid #eee;
+        height: auto !important;
+        min-height: 0 !important;
+        overflow: hidden;
+      }
+  
+    .education-item h3,
+    .education-item p {
+      margin: 2px 0 !important;
+      padding: 0;
+      line-height: 1.2 !important;
+      font-size: 0.95em;
+    }
+  
+    .education-item h3.degree {
+      font-size: 1em;
+      font-weight: 600;
+    }
+  
+    .education-item:last-child {
+      border-bottom: none;
+    }
+
+    .education {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        margin: 0 !important;
+      }
+  }
+  
