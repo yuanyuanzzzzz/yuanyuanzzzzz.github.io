@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TwinGuard (Under Submission)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap">
+<style>
+    body {
+        font-family: 'Raleway', sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+        color: #333;
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        max-width: 70%;
+        height: auto;
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 40px;
+        font: 0.1em;
+    }
+    a {
+        color: #0073e6;
+        text-decoration: underline;
+    }
+    pre {
+        background-color: #f5f5f5;
+        padding: 10px;
+        overflow-x: auto;
+    }
+</style>
+</head>
+
+<body>
+    <h1>LANTERN</h1>
+
+    <h2>Diagnosing Web Intrusion Drift under Evolving Attackers</h2>
+
+    <p style="text-align: center;"><em>Yuanyuan Zhou, Anna Maria Mandalari (University College London) <br> Abhishek Mishra (INSA-Lyon, Inria) <br> Ryu Kuki, Takayuki Sasaki, Katsunari Yoshioka (Yokohama National University)</em></p>
+    <p style="text-align: center;">Last updated: Jan 2026</p>
+
+    <img src="sys_full.png" alt="System">
+
+    <h3>News</h3>
+    <ul>
+        <li>Under submission </em></li>
+    </ul>
+
+    <h3>Abstract</h3>
+    <p>
+        Web attackers and tooling evolve continuously, degrading intrusion detection models as their internal representations fail to adapt. Existing drift detectors are brittle in production, either flooding operators with false alarms or missing genuine, structural shifts. We introduce LANTERN, an interpretable, dual-channel drift monitor that diagnoses when and why models degrade using two complementary indicators: Latent Mahalanobis Typicality (LMT), which captures deformation in the representation space, and Predictive Entropy (PE), which quantifies decision level confusion. We evaluate LANTERN on 32.9 million continuous HTTP(S) requests collected over 7 months by a large-scale distributed honeyfarm and find that prominent state-of-the-art detectors are operationally unviable, generating thousands of false positives. In contrast, LANTERN's signals align tightly with true degradation: LMT attains a correlation of r=0.938 with F1 score, and our adaptive deployment maintains stable accuracy over time with only 1.93% triggering rate, ending the period with an F1 score more than 10% higher than a static model. Beyond statistical metrics, LANTERN uncovers the operational roots of drift by identifying acute structural shifts such as a large centralized distribution event and tracing the evolution of drift associated exploit behaviours through longitudinal analysis. These results position LANTERN as a production ready and interpretable monitor for web intrusion detection under evolving threats.
+    </p>
+
+    <h3>About this publication</h3>
+    <p><strong>Paper title:</strong> <em>LANTERN: Diagnosing Web Intrusion Drift under Evolving Attackers
+    </em><br>
+    <strong>Authors:</strong> Yuanyuan Zhou (UCL), Abhishek Mishra (INSA-Lyon, Inria), Ryu Kuki (YNU), Takayuki Sasaki(YNU), Katsunari Yoshioka(YNU), Anna Maria Mandalari (UCL)<br>
+    <strong>Full Text (PDF):</strong> <a href="lantern.pdf" target="_blank">pre-print available</a><br>
+    <strong>Code:</strong> <a href="https://github.com/SafeNetIoT/LANTERN" target="_blank">available on GitHub</a><br>
+    <strong>Presentation at </strong> <a href="https://ripe90.ripe.net/archives/video/1620/" target="_blank">RIPE 90</a></p>
+
+    <h3>Citation</h3>
+    <pre>
+        waiting for publication
+    </pre>
+
+    <h3>Acknowledgments</h3>
+    <ul>
+        <li>Global Cyber Alliance (GCA)</li>
+        <li>Yokohama National University (YNU)</li>
+    </ul>
+</body>
+</html>
